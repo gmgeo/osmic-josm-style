@@ -12,6 +12,31 @@ meta {
     link: "https://github.com/nebulon42/osmic-josm-style";
 }
 
+/*****************************/
+/* building/entrance/address */
+/*****************************/
+
+node[entrance=yes] {
+    icon-image: "icons/amenity/entrance-12.svg";
+    icon-width: 12;
+}
+node[entrance=main] {
+    icon-image: "icons/amenity/entrance-main-12.svg";
+    icon-width: 12;
+}
+node[entrance=service] {
+    icon-image: "icons/amenity/entrance-service-12.svg";
+    icon-width: 12;
+}
+node[entrance=emergency] {
+    icon-image: "icons/amenity/entrance-emergency-12.svg";
+    icon-width: 12;
+}
+node[entrance=exit] {
+    icon-image: "icons/amenity/exit-12.svg";
+    icon-width: 12
+}
+
 /*************************/
 /* generator:source tags */
 /*************************/
@@ -35,6 +60,14 @@ node[man_made=water_tower] {
 }
 node[man_made=windmill] {
     icon-image: "icons/tourism/windmill-16.svg";
+    icon-width: 16;
+}
+node[man_made=mast] {
+    icon-image: "icons/outdoor/mast-16.svg";
+    icon-width: 16;
+}
+node[man_made=mast][tower:type=communication] {
+    icon-image: "icons/outdoor/mast-communications-16.svg";
     icon-width: 16;
 }
 
@@ -174,6 +207,10 @@ node[shop=hifi] {
     icon-image: "icons/shop/hifi-16.svg";
     icon-width: 16;
 }
+node[shop=ice_cream] {
+    icon-image: "icons/shop/ice-cream-16.svg";
+    icon-width: 16;
+}
 node[shop=jewelry] {
     icon-image: "icons/shop/jewellery-16.svg";
     icon-width: 16;
@@ -204,6 +241,10 @@ node[shop=toys] {
 }
 node[shop=pet] {
     icon-image: "icons/shop/pet-16.svg";
+    icon-width: 16;
+}
+node[shop=photo] {
+    icon-image: "icons/shop/photo-16.svg";
     icon-width: 16;
 }
 node[shop=car_parts] {
@@ -608,19 +649,19 @@ node[sport=swimming] {
 
 node[natural=spring] {
     icon-image: "icons/nature/spring-16.svg";
+    icon-width: 16;
 }
 node[natural=saddle] {
     icon-image: "icons/nature/saddle-16.svg";
-    set icon_z0;
-
-    set text_z0;
+    icon-width: 16;
 }
 node[natural=peak] {
     icon-image: "icons/nature/peak-16.svg";
     icon-width: 16;
-    set icon_z0;
-
-    set text_z0;
+}
+node[natural=tree] {
+    icon-image: "icons/nature/tree-unspecified-16.svg";
+    icon-width: 16;
 }
 node[natural=tree][type=conifer],
 node[natural=tree][leaf_type=needleleaved] {
