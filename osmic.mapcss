@@ -152,11 +152,15 @@ node[shop=car_dealer] {
     icon-width: 16;
 }
 node[shop=car_repair] {
-    icon-image: "icons/transport/repair-car-16.svg";
+    icon-image: "icons/shop/repair-car-16.svg";
     icon-width: 16;
 }
 node[shop=clothes] {
     icon-image: "icons/shop/clothes-16.svg";
+    icon-width: 16;
+}
+node[shop=computer] {
+    icon-image: "icons/shop/computer-16.svg";
     icon-width: 16;
 }
 node[shop=confectionery] {
@@ -280,6 +284,10 @@ node[amenity=cafe] {
     icon-image: "icons/eat-drink/cafe-16.svg";
     icon-width: 16;
 }
+node[amenity=clock] {
+    icon-image: "icons/amenity/clock-16.svg";
+    icon-width: 16;
+}
 node[amenity=restaurant] {
     icon-image: "icons/eat-drink/restaurant-16.svg";
     icon-width: 16;
@@ -319,6 +327,10 @@ node[amenity=bicycle_parking] {
 }
 node[amenity=bicycle_rental] {
     icon-image: "icons/transport/rental-bicycle-16.svg";
+    icon-width: 16;
+}
+node[amenity=bicycle_repair_station] {
+    icon-image: "icons/amenity/repair-bicycle-16.svg";
     icon-width: 16;
 }
 node[amenity=car_rental] {
@@ -537,6 +549,10 @@ node[tourism=museum] {
 /* information tags */
 /********************/
 
+node[tourism=information] {
+    icon-image: "icons/tourism/information-16.svg";
+    icon-width: 16;
+}
 node[tourism=information][information=guidepost] {
     icon-image: "icons/outdoor/guidepost-16.svg";
     icon-width: 16;
