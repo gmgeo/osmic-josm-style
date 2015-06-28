@@ -10,6 +10,9 @@ Documentation of MapCSS format:
 
 meta {
     title: "Osmic";
+    description: "Osmic icons for JOSM";
+    author: "nebulon42";
+    version: "0.1";
     link: "https://github.com/nebulon42/osmic-josm-style";
 }
 

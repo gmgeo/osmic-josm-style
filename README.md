@@ -2,10 +2,10 @@
 
 Including Osmic icons into JOSM.
 
+# Installation
 
-To install: 
-Go to JOSM's preferences, select 3rd icon from the top, select Map Paint Styles Tab, then select Osmic.
-More detailed instruction available in [JOSM's documentation](http://josm.openstreetmap.de/wiki/Styles)
+Go to JOSM's preferences, select the 3rd icon from the top, select Map Paint Styles Tab, then select Osmic.
+More detailed instructions are available in [JOSM's documentation](http://josm.openstreetmap.de/wiki/Styles).
 
 # License
 
