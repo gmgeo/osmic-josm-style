@@ -45,6 +45,10 @@ node[barrier=bollard] {
     icon-image: "icons/barrier/bollard-12.svg";
     icon-width: 12;
 }
+node[barrier=gate] {
+    icon-image: "icons/barrier/gate-12.svg";
+    icon-width: 12;
+}
 
 /*************************/
 /* generator:source tags */
@@ -406,7 +410,7 @@ node[amenity=place_of_worship][religion=buddhist] {
     icon-image: "icons/religious/buddhist-16.svg";
     icon-width: 16;
 }
-node[amenity=place_of_worship][religion=christian] {
+node[amenity=place_of_worship][religion=christian][denomination!=jehovahs_witness] {
     icon-image: "icons/religious/christian-16.svg";
     icon-width: 16;
 }
