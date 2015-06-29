@@ -37,6 +37,15 @@ node[entrance=exit] {
     icon-width: 12
 }
 
+/****************/
+/* barrier tags */
+/****************/
+
+node[barrier=bollard] {
+    icon-image: "icons/barrier/bollard-12.svg";
+    icon-width: 12;
+}
+
 /*************************/
 /* generator:source tags */
 /*************************/
