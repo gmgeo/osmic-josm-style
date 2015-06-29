@@ -49,6 +49,10 @@ node[barrier=gate] {
     icon-image: "icons/barrier/gate-12.svg";
     icon-width: 12;
 }
+node[barrier=lift_gate] {
+    icon-image: "icons/barrier/lift-gate-12.svg";
+    icon-width: 12;
+}
 
 /*************************/
 /* generator:source tags */
@@ -643,6 +647,10 @@ node[railway=halt] {
 }
 node[railway=tram_stop] {
     icon-image: "icons/transport/tram-stop-16.svg";
+    icon-width: 16;
+}
+node[railway=station][transport=subway] {
+    icon-image: "icons/transport/metro-16.svg";
     icon-width: 16;
 }
 node[railway=subway_entrance] {
