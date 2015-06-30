@@ -12,28 +12,61 @@ meta {
     link: "https://github.com/nebulon42/osmic-josm-style";
 }
 
+/*************************/
+/* create style settings */
+/*************************/
+
+setting::hide_icons {
+  type: boolean;
+  label: tr("Hide icons at low zoom");
+  default: true;
+}
+
+setting::shrink_nodes {
+  type: boolean;
+  label: tr("Less obtrusive node symbols at low zoom");
+  default: true;
+}
+
+setting::highway_labels {
+  type: boolean;
+  label: tr("Display street labels (at high zoom)");
+  default: true;
+}
+
+setting::alt_turn_icons {
+  type: boolean;
+  label: tr("Use alternative turn restriction icon set");
+  default: false;
+}
+
 /*****************************/
 /* building/entrance/address */
 /*****************************/
 
 node[entrance=yes] {
     icon-image: "icons/amenity/entrance-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[entrance=main] {
     icon-image: "icons/amenity/entrance-main-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[entrance=service] {
     icon-image: "icons/amenity/entrance-service-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[entrance=emergency] {
     icon-image: "icons/amenity/entrance-emergency-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[entrance=exit] {
     icon-image: "icons/amenity/exit-12.svg";
+    set icon_z17;
     icon-width: 12
 }
 
@@ -43,14 +76,17 @@ node[entrance=exit] {
 
 node[barrier=bollard] {
     icon-image: "icons/barrier/bollard-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[barrier=gate] {
     icon-image: "icons/barrier/gate-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[barrier=lift_gate] {
     icon-image: "icons/barrier/lift-gate-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 
@@ -60,6 +96,7 @@ node[barrier=lift_gate] {
 
 node[highway=ford], node[ford?] {
     icon-image: "icons/transport/ford-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -69,6 +106,7 @@ node[highway=ford], node[ford?] {
 
 node[generator:source=wind] {
     icon-image: "icons/energy/power-wind-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -78,22 +116,27 @@ node[generator:source=wind] {
 
 node[man_made=lighthouse] {
     icon-image: "icons/outdoor/lighthouse-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[man_made=water_tower] {
     icon-image: "icons/outdoor/water-tower-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[man_made=windmill] {
     icon-image: "icons/tourism/windmill-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[man_made=mast] {
     icon-image: "icons/outdoor/mast-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[man_made=mast][tower:type=communication] {
     icon-image: "icons/outdoor/mast-communications-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -103,6 +146,7 @@ node[man_made=mast][tower:type=communication] {
 
 node[office=government] {
     icon-image: "icons/administration/government-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -112,14 +156,17 @@ node[office=government] {
 
 node[leisure=water_park] {
     icon-image: "icons/sports/swimming-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[leisure=playground] {
     icon-image: "icons/amenity/playground-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[leisure=picnic_table] {
     icon-image: "icons/outdoor/table-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -129,164 +176,204 @@ node[leisure=picnic_table] {
 
 node[shop=supermarket] {
     icon-image: "icons/shop/supermarket-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=convenience] {
     icon-image: "icons/shop/convenience-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=bakery] {
     icon-image: "icons/shop/bakery-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=butcher] {
     icon-image: "icons/shop/butcher-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=bicycle] {
     icon-image: "icons/shop/bicycle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=doityourself] {
     icon-image: "icons/shop/doityourself-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=dry_cleaning],
 node[shop=laundry] {
     icon-image: "icons/shop/laundry-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=kiosk] {
     icon-image: "icons/shop/kiosk-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=beverages] {
     icon-image: "icons/shop/beverages-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=alcohol] {
     icon-image: "icons/shop/alcohol-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=books] {
     icon-image: "icons/shop/books-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=car],
 node[shop=car_dealer] {
     icon-image: "icons/shop/car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=car_repair] {
     icon-image: "icons/shop/repair-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=clothes] {
     icon-image: "icons/shop/clothes-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=computer] {
     icon-image: "icons/shop/computer-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=confectionery] {
     icon-image: "icons/shop/confectionery-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=copyshop] {
     icon-image: "icons/shop/copyshop-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=cycle_repair] {
     icon-image: "icons/shop/repair-bicycle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=electronics] {
     icon-image: "icons/shop/electronics-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=furniture] {
     icon-image: "icons/shop/furniture-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=florist] {
     icon-image: "icons/shop/florist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=gift] {
     icon-image: "icons/shop/gift-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=greengrocer] {
     icon-image: "icons/shop/greengrocer-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=garden_centre] {
     icon-image: "icons/shop/garden-centre-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=hairdresser] {
     icon-image: "icons/shop/hairdresser-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=hardware] {
     icon-image: "icons/shop/doityourself-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=hifi] {
     icon-image: "icons/shop/hifi-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=ice_cream] {
     icon-image: "icons/shop/ice-cream-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=jewelry] {
     icon-image: "icons/shop/jewellery-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=mobile_phone] {
     icon-image: "icons/shop/mobile-phone-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=newsagent] {
     icon-image: "icons/shop/news-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=optician] {
     icon-image: "icons/shop/optician-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=shoes] {
     icon-image: "icons/shop/shoes-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=stationery] {
     icon-image: "icons/shop/stationery-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=toys] {
     icon-image: "icons/shop/toys-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=pet] {
     icon-image: "icons/shop/pet-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=photo] {
     icon-image: "icons/shop/photo-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=car_parts] {
     icon-image: "icons/shop/car-parts-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=beauty] {
     icon-image: "icons/shop/beauty-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[shop=wine] {
     icon-image: "icons/shop/alcohol-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -296,243 +383,298 @@ node[shop=wine] {
 
 node[amenity=pub] {
     icon-image: "icons/eat-drink/pub-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=biergarten] {
     icon-image: "icons/eat-drink/biergarten-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=nightclub] {
     icon-image: "icons/amenity/nightclub-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=cafe] {
     icon-image: "icons/eat-drink/cafe-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=clock] {
     icon-image: "icons/amenity/clock-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=restaurant] {
     icon-image: "icons/eat-drink/restaurant-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=food_court] {
     icon-image: "icons/eat-drink/restaurant-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=fast_food] {
     icon-image: "icons/eat-drink/fast-food-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bar] {
     icon-image: "icons/eat-drink/bar-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=ice_cream] {
     icon-image: "icons/eat-drink/ice-cream-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=parking] {
     icon-image: "icons/transport/parking-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=parking_entrance] {
     icon-image: "icons/transport/parking-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=parking_entrance][parking=multi-storey],
 node[amenity=parking][parking=multi-storey] {
     icon-image: "icons/transport/parking-garage-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bicycle_parking] {
     icon-image: "icons/transport/parking-bicycle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bicycle_rental] {
     icon-image: "icons/transport/rental-bicycle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bicycle_repair_station] {
     icon-image: "icons/amenity/repair-bicycle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=car_rental] {
     icon-image: "icons/transport/rental-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=car_sharing] {
     icon-image: "icons/transport/shared-car-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=taxi] {
     icon-image: "icons/transport/taxi-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=fuel] {
     icon-image: "icons/transport/fuel-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=charging_station] {
     icon-image: "icons/transport/charging-station-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=telephone] {
     icon-image: "icons/amenity/telephone-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[emergency=phone] {
     icon-image: "icons/emergency/emergency-phone-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=toilets] {
     icon-image: "icons/amenity/toilets-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=recycling][recycling_type=container] {
     icon-image: "icons/amenity/recycling-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=waste_basket] {
     icon-image: "icons/outdoor/waste-basket-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=townhall] {
     icon-image: "icons/administration/town-hall-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=embassy] {
     icon-image: "icons/administration/embassy-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=drinking_water] {
     icon-image: "icons/outdoor/drinking-water-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=fountain] {
     icon-image: "icons/outdoor/fountain-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship] {
     icon-image: "icons/religious/place-of-worship-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=buddhist] {
     icon-image: "icons/religious/buddhist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=christian][denomination!=jehovahs_witness] {
     icon-image: "icons/religious/christian-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=hindu] {
     icon-image: "icons/religious/hinduist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=jewish] {
     icon-image: "icons/religious/jewish-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=muslim] {
     icon-image: "icons/religious/muslim-16.svg";
-    icon-width: 16;}
+    set icon_z17;
+    icon-width: 16;
+}
 node[amenity=place_of_worship][religion=sikh] {
     icon-image: "icons/religious/sikhist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=shinto] {
     icon-image: "icons/religious/shintoist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=place_of_worship][religion=taoist] {
     icon-image: "icons/religious/taoist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=grave_yard] {
     icon-image: "icons/amenity/cemetery-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=post_office] {
     icon-image: "icons/amenity/post-office-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=post_box] {
     icon-image: "icons/amenity/post-office-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[amenity=pharmacy] {
     icon-image: "icons/health/pharmacy-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=hospital],
 node[amenity=clinic] {
     icon-image: "icons/health/hospital-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=doctors] {
     icon-image: "icons/health/doctor-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=dentist] {
     icon-image: "icons/health/dentist-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=library] {
     icon-image: "icons/amenity/library-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=police] {
     icon-image: "icons/emergency/police-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=fire_station] {
     icon-image: "icons/emergency/fire-station-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bus_station] {
     icon-image: "icons/transport/bus-station-16.svg";
+    set icon_z17;
 }
 node[amenity=ferry_terminal] {
     icon-image: "icons/transport/ferry-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=theatre] {
     icon-image: "icons/tourism/theatre-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=cinema] {
     icon-image: "icons/amenity/cinema-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=courthouse] {
     icon-image: "icons/administration/courthouse-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=prison] {
     icon-image: "icons/administration/prison-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bank] {
     icon-image: "icons/money/bank-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=atm] {
     icon-image: "icons/money/atm-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[amenity=bench] {
     icon-image: "icons/outdoor/bench-16.svg";
+    set icon_z17;
     icon-width: 16;
-}
-area[amenity=shelter],
-area[amenity=marketplace],
-area[amenity=wlan] {
-    fill-color: amenity_light#f7efb7;
 }
 node[amenity=hunting_stand] {
     icon-image: "icons/outdoor/hunting-stand-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -542,32 +684,42 @@ node[amenity=hunting_stand] {
 
 node[tourism=hotel] {
     icon-image: "icons/accommodation/hotel-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=motel] {
     icon-image: "icons/accommodation/motel-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=hostel] {
     icon-image: "icons/accommodation/hostel-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=camp_site] {
     icon-image: "icons/outdoor/camping-16.svg";
+    set icon_z17;
+    icon-width: 16;
 }
 node[tourism=caravan_site] {
     icon-image: "icons/outdoor/caravan-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=picnic_site] {
     icon-image: "icons/outdoor/table-16.svg";
+    set icon_z17;
+    icon-width: 16;
 }
 node[tourism=viewpoint] {
     icon-image: "icons/tourism/viewpoint-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=museum] {
     icon-image: "icons/tourism/museum-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -577,14 +729,17 @@ node[tourism=museum] {
 
 node[tourism=information] {
     icon-image: "icons/tourism/information-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=information][information=guidepost] {
     icon-image: "icons/outdoor/guidepost-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[tourism=information][information=office] {
     icon-image: "icons/tourism/information-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -594,18 +749,22 @@ node[tourism=information][information=office] {
 
 node[historic=castle] {
     icon-image: "icons/tourism/castle-fortress-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[historic=monument] {
     icon-image: "icons/tourism/monument-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[historic=memorial] {
     icon-image: "icons/tourism/memorial-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[historic=archaeological_site] {
     icon-image: "icons/tourism/archaeological-site-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -615,30 +774,37 @@ node[historic=archaeological_site] {
 
 node[highway=bus_stop] {
     icon-image: "icons/transport/bus-stop-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[public_transport=stop_position][bus=yes] {
     icon-image: "icons/transport/bus-stop-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[public_transport=stop_position][ferry=yes] {
     icon-image: "icons/transport/ferry-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[public_transport=stop_position][tram=yes] {
     icon-image: "icons/transport/tram-stop-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[public_transport=stop_position][train=yes] {
     icon-image: "icons/transport/railway-halt.16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[public_transport=platform][bus=yes] {
     icon-image: "icons/transport/bus-stop-12.svg";
+    set icon_z17;
     icon-width: 12;
 }
 node[public_transport=platform][ferry=yes] {
     icon-image: "icons/transport/ferry-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -648,22 +814,27 @@ node[public_transport=platform][ferry=yes] {
 
 node[railway=station], node[railway=tram_station] {
     icon-image: "icons/transport/railway-station-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[railway=halt] {
     icon-image: "icons/transport/railway-halt-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[railway=tram_stop] {
     icon-image: "icons/transport/tram-stop-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[railway=station][transport=subway] {
     icon-image: "icons/transport/metro-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[railway=subway_entrance] {
     icon-image: "icons/transport/subway-entrance-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -673,10 +844,12 @@ node[railway=subway_entrance] {
 
 node[aeroway=aerodrome] {
     icon-image: "icons/transport/airport-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[aeroway=helipad] {
     icon-image: "icons/transport/heliport-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -686,6 +859,7 @@ node[aeroway=helipad] {
 
 node[sport=swimming] {
     icon-image: "icons/sports/swimming-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -695,28 +869,34 @@ node[sport=swimming] {
 
 node[natural=spring] {
     icon-image: "icons/nature/spring-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[natural=saddle] {
     icon-image: "icons/nature/saddle-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[natural=peak] {
     icon-image: "icons/nature/peak-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[natural=tree] {
     icon-image: "icons/nature/tree-unspecified-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[natural=tree][type=conifer],
 node[natural=tree][leaf_type=needleleaved] {
     icon-image: "icons/nature/tree-coniferous-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 node[natural=tree][type=broad_leaved],
 node[natural=tree][leaf_type=broadleaved] {
     icon-image: "icons/nature/tree-deciduous-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
 
@@ -726,5 +906,75 @@ node[natural=tree][leaf_type=broadleaved] {
 
 node[waterway=waterfall] {
     icon-image: "icons/nature/waterfall-16.svg";
+    set icon_z17;
     icon-width: 16;
 }
+
+/****************************************/
+/* zoom levels and general node display */
+/****************************************/
+
+/*
+Summary of different zoom levels:
+  (any zoom)    place=* and a few natural icons with their text is shown
+  |z-15         untagged way nodes are hidden completely
+  |z16-         fixme=* and note=* symbols
+  |z17-         normal POI icons (without text),
+                street name along highway=* ways
+  |z18-         text for normal POI icons is shown
+  
+ * text size and node size is adapted according to zoom level (see style source below)
+ * maxspeed icons should not be distinguishable from POIs with "icon-image" property
+
+*/
+
+node {
+    text: auto;
+}
+node|z-16[setting("hide_icons")],
+node|z17-[!is_prop_set("icon-image")][setting("hide_icons")]!.maxspeedclass,
+node[!is_prop_set("icon-image")][!setting("hide_icons")]!.maxspeedclass {
+    symbol-size: 2;
+    symbol-shape: square;
+    symbol-stroke-color: node_standard#ffff00;
+    major-z-index: 4.95; /* put node squares above line text */
+}
+way > node|z-15[setting("shrink_nodes")]!:tagged {
+    symbol-shape: none;
+}
+node:connection {
+    symbol-stroke-color: node_connection#ffff00;
+}
+node:tagged {
+    symbol-stroke-color: none;
+    symbol-fill-color: node_tagged#00ffff;
+}
+
+way > node|z16[setting("shrink_nodes")]!:tagged { symbol-size: 1; }
+
+node|z17[setting("shrink_nodes")]               { symbol-size: 4; }
+way > node|z17[setting("shrink_nodes")]         { symbol-size: 2; }
+node|z17[setting("shrink_nodes")]:connection    { symbol-size: 4; }
+
+node|z18[setting("shrink_nodes")]               { symbol-size: 4; }
+way > node|z18[setting("shrink_nodes")]         { symbol-size: 3; }
+node|z18[setting("shrink_nodes")]:connection    { symbol-size: 5; }
+
+node|z19-[setting("shrink_nodes")]              { symbol-size: 4; }
+way > node|z19-[setting("shrink_nodes")]        { symbol-size: 4; }
+node|z19-[setting("shrink_nodes")]:connection   { symbol-size: 6; }
+
+node[!setting("shrink_nodes")]                  { symbol-size: 4; }
+way > node[!setting("shrink_nodes")]            { symbol-size: 4; }
+node[!setting("shrink_nodes")]:connection       { symbol-size: 6; }
+
+node|z-16[setting("hide_icons")].icon_z17!.icon_z0,
+relation|z-16[type=restriction][setting("hide_icons")] {
+    icon-image: none;
+}
+node|z-17[setting("hide_icons")]!.text_z0 {
+    text: none;
+}
+
+node|z19,area|z19   { font-size: 9; }
+node|z20-,area|z20-   { font-size: 10; }
