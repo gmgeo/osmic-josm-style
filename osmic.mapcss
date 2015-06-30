@@ -55,6 +55,15 @@ node[barrier=lift_gate] {
 }
 
 /*************************/
+/* highway tags */
+/*************************/
+
+node[highway=ford], node[ford?] {
+    icon-image: "icons/transport/ford-16.svg";
+    icon-width: 16;
+}
+
+/*************************/
 /* generator:source tags */
 /*************************/
 
