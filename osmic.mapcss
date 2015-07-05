@@ -99,6 +99,11 @@ node[highway=ford], node[ford?] {
     set icon_z17;
     icon-width: 16;
 }
+node[highway=steps] {
+    icon-image: "icons/barrier/steps-12.svg";
+    set icon_z17;
+    icon-width: 12;
+}
 
 /*************************/
 /* generator:source tags */
@@ -833,9 +838,9 @@ node[railway=station][transport=subway] {
     icon-width: 16;
 }
 node[railway=subway_entrance] {
-    icon-image: "icons/transport/subway-entrance-16.svg";
+    icon-image: "icons/amenity/entrance-transport-12.svg";
     set icon_z17;
-    icon-width: 16;
+    icon-width: 12;
 }
 
 /****************/
