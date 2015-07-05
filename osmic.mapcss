@@ -89,6 +89,11 @@ node[barrier=lift_gate] {
     set icon_z17;
     icon-width: 12;
 }
+node[barrier=cattle_grid] {
+    icon-image: "icons/barrier/cattle-grid-12.svg";
+    set icon_z17;
+    icon-width: 12;
+}
 
 /*************************/
 /* highway tags */
