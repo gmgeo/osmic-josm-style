@@ -687,6 +687,11 @@ node[amenity=hunting_stand] {
     set icon_z17;
     icon-width: 16;
 }
+node[amenity=veterinary] {
+    icon-image: "icons/health/veterinary-16.svg";
+    set icon_z17;
+    icon-width: 16;
+}
 
 /****************/
 /* tourism tags */
