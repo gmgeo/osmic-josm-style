@@ -12,4 +12,4 @@ More detailed instructions are available in [JOSM's documentation](http://josm.o
 # License
 
 The style file is the same license as JOSM, which is GPLv2+ (https://github.com/openstreetmap/josm/blob/mirror/LICENSE).
-Icons are CC0 from [Osmic](https://github.com/nebulon42/osmic).
+Icons are CC0 from [Osmic](https://github.com/gmgeo/osmic).
