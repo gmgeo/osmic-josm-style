@@ -109,6 +109,11 @@ node[highway=steps] {
     set icon_z17;
     icon-width: 12;
 }
+node[highway=elevator] {
+    icon-image: "icons/transport/elevator-16.svg";
+    set icon_z17;
+    icon-width: 16;
+}
 
 /*************************/
 /* generator:source tags */
