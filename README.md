@@ -4,7 +4,7 @@ Including Osmic icons into JOSM.
 
 This style only affects POI icons. You will still need the JOSM standard style (or any other) enabled.
 
-![Osmic JOSM Style Preview](https://github.com/gmgeo/osmic-josm-style/raw/master/preview.png "Preview")
+![Osmic JOSM Style Preview](https://github.com/gmgeo/osmic-josm-style/raw/master/preview.jpg "Preview")
 
 # Installation
 
