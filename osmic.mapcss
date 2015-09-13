@@ -28,18 +28,6 @@ setting::shrink_nodes {
   default: true;
 }
 
-setting::highway_labels {
-  type: boolean;
-  label: tr("Display street labels (at high zoom)");
-  default: true;
-}
-
-setting::alt_turn_icons {
-  type: boolean;
-  label: tr("Use alternative turn restriction icon set");
-  default: false;
-}
-
 /*****************************/
 /* building/entrance/address */
 /*****************************/
@@ -995,6 +983,3 @@ relation|z-16[type=restriction][setting("hide_icons")] {
 node|z-17[setting("hide_icons")]!.text_z0 {
     text: none;
 }
-
-node|z19,area|z19   { font-size: 9; }
-node|z20-,area|z20-   { font-size: 10; }
