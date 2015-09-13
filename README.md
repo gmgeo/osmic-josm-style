@@ -4,6 +4,8 @@ Including Osmic icons into JOSM.
 
 This style only affects POI icons. You will still need the JOSM standard style (or any other) enabled.
 
+![Osmic JOSM Style Preview](https://github.com/gmgeo/osmic-josm-style/raw/master/preview.png "Preview")
+
 # Installation
 
 Go to JOSM's preferences, select the 3rd icon from the top, select Map Paint Styles Tab, then select Osmic.
