@@ -379,6 +379,11 @@ node[shop=wine] {
     set icon_z17;
     icon-width: 18;
 }
+node[shop=chemist] {
+    icon-image: "icons/shop/chemist-18.svg";
+    set icon_z17;
+    icon-width: 18;
+}
 
 /****************/
 /* amenity tags */
