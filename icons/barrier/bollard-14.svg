@@ -11,6 +11,6 @@
   </metadata>
   <defs id="defs6"/>
   <rect width="14" height="14" x="0" y="0" id="canvas" style="fill:none;stroke:none;visibility:hidden"/>
-  <path d="m 4,3 0,4.25 2,0 L 6,3 C 6,2 5,2 5,2 5,2 4,2 4,3 z M 2,8 2,9 8,9 8,8 z" id="halo" style="fill:#ffffff;stroke:#ffffff;stroke-width:4.0;opacity:0.7;" transform="translate(2.0,2.0)"/>
+  <path d="m 4,3 0,4.25 2,0 L 6,3 C 6,2 5,2 5,2 5,2 4,2 4,3 z M 2,8 2,9 8,9 8,8 z" id="halo" style="fill:#ffffff;stroke:#ffffff;stroke-width:4.0;opacity:1.0;" transform="translate(2.0,2.0)"/>
 <path d="m 4,3 0,4.25 2,0 L 6,3 C 6,2 5,2 5,2 5,2 4,2 4,3 z M 2,8 2,9 8,9 8,8 z" id="bollard" style="fill:#734a08;fill-opacity:1" transform="translate(2.0,2.0)"/>
 </svg>

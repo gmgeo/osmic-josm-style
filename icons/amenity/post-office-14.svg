@@ -11,6 +11,6 @@
   </metadata>
   <defs id="defs6"/>
   <rect width="14" height="14" x="0" y="0" id="canvas" style="fill:none;stroke:none;visibility:hidden"/>
-  <path d="M 4e-7,1 0,2 5,5 9.9999996,2 10,1 z M 0,3.5 4e-7,9 10,9 9.9999996,3.5 5,6.5 z" id="halo" style="fill:#ffffff;stroke:#ffffff;stroke-width:4.0;opacity:0.7;" transform="translate(2.0,2.0)"/>
+  <path d="M 4e-7,1 0,2 5,5 9.9999996,2 10,1 z M 0,3.5 4e-7,9 10,9 9.9999996,3.5 5,6.5 z" id="halo" style="fill:#ffffff;stroke:#ffffff;stroke-width:4.0;opacity:1.0;" transform="translate(2.0,2.0)"/>
 <path d="M 4e-7,1 0,2 5,5 9.9999996,2 10,1 z M 0,3.5 4e-7,9 10,9 9.9999996,3.5 5,6.5 z" id="post-office" style="fill:#734a08;fill-opacity:1" transform="translate(2.0,2.0)"/>
 </svg>
