@@ -1,6 +1,6 @@
 # Osmic JOSM style
 
-Including Osmic icons into JOSM.
+Including [Osmic](https://github.com/gmgeo/osmic) icons into JOSM.
 
 This style only affects POI icons. You will still need the JOSM standard style (or any other) enabled.
 
