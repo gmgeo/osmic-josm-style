@@ -806,7 +806,7 @@ node[public_transport=stop_position][tram=yes] {
     icon-width: 18;
 }
 node[public_transport=stop_position][train=yes] {
-    icon-image: "icons/transport/railway-halt.16.svg";
+    icon-image: "icons/transport/railway-halt-18.svg";
     set icon_z17;
     icon-width: 18;
 }
